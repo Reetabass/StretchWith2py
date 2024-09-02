@@ -13,10 +13,11 @@ def splitterCount(word):
     split_by_space = word.split(" ")
     print(split_by_space)
 
-    for i in range(split_by_space):
+    for i in range(len(split_by_space)):
+        
         split_by_stretch = split_by_space[i].split("z")
 
-        for j in range(split_by_stretch):
+        for j in range(len(split_by_stretch)):
             
             if is2count(split_by_stretch[j]):
                 count += 1
