@@ -16,26 +16,26 @@ def splitterCount(word):
     for i in range(len(split_by_space)):
         
         split_by_stretch = split_by_space[i].split("z")
-
+        
         for j in range(len(split_by_stretch)):
             
             if is2count(split_by_stretch[j]):
                 count += 1
                 break
-
+        
     return count
 
 def isVowel(c):
-    
+
     c = c.lower()
-    
+
     return "aeiou".find(c) != -1
 
 
 def is2count(word):
     
     count = 0
-    for i in range(len(word)-1):
+    for i in range(len(word)):
         
         if isVowel(word[i]):
             count += 1
